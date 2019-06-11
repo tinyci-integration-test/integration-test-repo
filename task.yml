@@ -1,12 +1,13 @@
 ---
-mountpoint: "/"
+mountpoint: "/tmp/repo"
+workdir: "/"
 default_image: "debian:latest"
 runs:
   sleep:
     command: [ "sleep", "1" ]
   exit0:
-    command: [ "exit", "0" ]
+    command: [ "bash", "-c", "exit 0" ]
   exit1:
-    command: [ "exit", "1" ]
+    command: [ "bash", "-c", "exit 1" ]
   catlog: 
     command: [ "cat", "/proc/cpuinfo" ]
