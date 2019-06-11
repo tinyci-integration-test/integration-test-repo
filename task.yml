@@ -1,6 +1,6 @@
 ---
 mountpoint: "/"
-default_image: "_/debian:latest"
+default_image: "debian:latest"
 runs:
   sleep:
     command: [ "sleep", "1" ]
