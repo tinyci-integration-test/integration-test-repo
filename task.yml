@@ -8,3 +8,5 @@ runs:
     command: [ "sleep", "10" ]
   sleep2:
     command: [ "sleep", "7" ]
+  sleep-win:
+    command: [ "sleep", "2" ]
