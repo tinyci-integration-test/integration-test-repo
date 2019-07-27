@@ -4,10 +4,5 @@ workdir: "/"
 default_image: "debian:latest"
 runs:
   sleep:
-    command: [ "sleep", "1" ]
-  exit0:
-    command: [ "bash", "-c", "exit 0" ]
-  exit1:
-    command: [ "bash", "-c", "exit 1" ]
-  catlog: 
-    command: [ "cat", "/proc/cpuinfo" ]
+    command: [ "sleep", "10" ]
+    timeout: 5s
