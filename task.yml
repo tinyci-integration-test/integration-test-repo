@@ -2,7 +2,9 @@
 mountpoint: "/tmp/repo"
 workdir: "/"
 default_image: "debian:latest"
+default_timeout: 5s
 runs:
   sleep:
     command: [ "sleep", "10" ]
-    timeout: 5s
+  sleep2:
+    command: [ "sleep", "7" ]
