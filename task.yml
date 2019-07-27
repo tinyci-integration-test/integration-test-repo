@@ -6,3 +6,5 @@ runs:
   sleep:
     command: [ "sleep", "10" ]
     timeout: 5s
+  sleep-no-timeout:
+    command: [ "sleep", "5" ]
